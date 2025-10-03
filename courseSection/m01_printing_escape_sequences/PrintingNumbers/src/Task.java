@@ -5,7 +5,7 @@ public class Task {
             System.out.println(i);
 
             if (i == 5) {
-                System.out.println("kmwokemd");
+                System.out.println(" ");
             }
         }
     }
