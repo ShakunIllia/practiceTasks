@@ -8,8 +8,7 @@ public class Task {
         height = args.length > 0 ? Integer.parseInt(args[1]) : height;
         // ------------------------------
 
-
-        //Write your solution here
-
+        int ar = width*height;
+        System.out.println("Area of rectangle="+ar);
     }
 }
