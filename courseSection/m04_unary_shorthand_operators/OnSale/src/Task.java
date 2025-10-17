@@ -8,7 +8,8 @@ public class Task {
         discountPercentage = args.length > 0 ? Double.parseDouble(args[1]) : discountPercentage;
         //--------------------------------
 
-        //Write your solution here
-
+        double discountAmount = discountPercentage*currentPrice/100;
+        currentPrice -= discountAmount;
+        System.out.println("discountAmount = " + discountAmount +"\n"+ "currentPrice = " + currentPrice);
     }
 }
