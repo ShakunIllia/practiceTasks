@@ -5,6 +5,5 @@ public class Task {
         players = args.length > 0 ? Integer.parseInt(args[0]) : players;
         //-----------------------------------
         System.out.println(players+=4);
-
     }
 }
