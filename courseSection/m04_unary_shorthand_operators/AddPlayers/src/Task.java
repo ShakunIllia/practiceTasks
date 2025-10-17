@@ -4,6 +4,7 @@ public class Task {
         // Do not change below line:. needed for testing---
         players = args.length > 0 ? Integer.parseInt(args[0]) : players;
         //-----------------------------------
-        System.out.println(players+=4);
+        players+=4;
+        System.out.println(players);
     }
 }
