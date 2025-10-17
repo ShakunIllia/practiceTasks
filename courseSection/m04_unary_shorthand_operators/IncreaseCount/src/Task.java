@@ -5,7 +5,8 @@ public class Task {
         //Do not change below line:needed for testing---
         count = args.length > 0 ? Integer.parseInt(args[0]) : count;
 
-        // Write your solution here
-
+        count = count + 1;
+        count+=1;
+        System.out.println("count = " + ++count);
     }
 }
