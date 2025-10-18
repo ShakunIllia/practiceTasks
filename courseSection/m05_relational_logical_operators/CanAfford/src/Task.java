@@ -8,7 +8,7 @@ public class Task {
         itemPrice = args.length> 0 ? Double.parseDouble(args[1]): itemPrice;
         //--------------------------------
 
-        //Write your solution here
-
+        boolean canAfford = accountBalance >= itemPrice;
+        System.out.println("canAfford = "+canAfford);
     }
 }
