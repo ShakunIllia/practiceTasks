@@ -11,13 +11,7 @@ public class Task {
         hasDriverLicense = args.length > 0 ? Boolean.parseBoolean(args[2]) : hasDriverLicense;
         //--------------------------------
 
-        boolean allowedToDrive;
-        if((age >= 18 || hasDriverLicense) && (age >= 15.5 || hasLearningPermit)){
-            allowedToDrive = true;
-        }
-        else{
-            allowedToDrive = false;
-        }
+        boolean allowedToDrive = (age >= 18 || hasDriverLicense) && (age >= 15.5 || hasLearningPermit);
         System.out.println("Is Mike allowed to drive? "+allowedToDrive);
     }
 }
