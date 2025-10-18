@@ -9,7 +9,13 @@ public class Task {
         department = args.length > 0 ? Integer.parseInt(args[1]) : department;
         //--------------------------------
 
-        //Write your solution here
-
+        boolean hasBonus;
+        if(yearsWithCompany >= 5 && department == 10 || department == 15){
+            hasBonus = true;
+        }
+        else{
+            hasBonus = false;
+        }
+        System.out.println("hasBonus = "+hasBonus);
     }
 }

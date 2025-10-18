@@ -12,7 +12,7 @@ public class Task {
         //--------------------------------
 
         boolean allowedToDrive;
-        if(age >= 18 || hasDriverLicense && age >= 15.5 || hasLearningPermit){
+        if((age >= 18 || hasDriverLicense) && (age >= 15.5 || hasLearningPermit)){
             allowedToDrive = true;
         }
         else{
