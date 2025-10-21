@@ -11,5 +11,7 @@ public class Task {
         double discountAmount = discountPercentage*currentPrice/100;
         currentPrice -= discountAmount;
         System.out.println("discountAmount = " + discountAmount +"\n"+ "currentPrice = " + currentPrice);
+
+
     }
 }
