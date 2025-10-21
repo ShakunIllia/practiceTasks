@@ -7,7 +7,7 @@ public class Task {
         age = args.length > 0 ? Integer.parseInt(args[0]) : age;
         //--------------------------------
 
-        //Write your solution here
-
+        boolean isEligible = age >= 18 && age <= 65;
+        System.out.println("Am I eligible to work? "+isEligible);
     }
 }
