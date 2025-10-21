@@ -6,7 +6,7 @@ public class Task {
         year = args.length > 0 ? Integer.parseInt(args[0]) : year;
         //--------------------------------
 
-        //Write your solution here
-
+        boolean isLeapYear = year%4 == 0 && year%100 != 0 || year%400 == 0;
+        System.out.println("Is "+ year +" a leap year? "+ isLeapYear);
     }
 }
