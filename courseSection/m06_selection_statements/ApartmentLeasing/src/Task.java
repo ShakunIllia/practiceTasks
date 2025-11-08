@@ -10,6 +10,23 @@ public class Task {
         numberOfBedrooms = args.length > 0 ? Integer.parseInt(args[0]) : numberOfBedrooms;
         //--------------------------------
 
-        //Write your solution here
+        switch(numberOfBedrooms){
+            case 1:
+                System.out.println(numberOfBedrooms);
+                System.out.println("One Bedroom Selected"+'\n'+"Starting Price: 1100");
+                break;
+            case 2:
+                System.out.println(numberOfBedrooms);
+                System.out.println("Two Bedroom Selected"+'\n'+"Starting Price: 1850");
+                break;
+            case 3:
+                System.out.println(numberOfBedrooms);
+                System.out.println("Three Bedroom Selected"+'\n'+"Starting Price: 2550");
+                break;
+            default:
+                System.out.println(numberOfBedrooms);
+                System.out.println("Sorry, we do not offer that many bedrooms");
+                break;
+        }
     }
 }
