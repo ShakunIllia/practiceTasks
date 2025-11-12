@@ -9,7 +9,10 @@ public class Task {
         b = args.length > 0 ? Integer.parseInt(args[1]) : b;
         //--------------------------------
 
-        //Write your solution here
+        System.out.println("a is " + a +", "+ "b is " + b);
+
+        if(a > b) {System.out.println(a + " is greater");}
+        else {System.out.println(b + " is greater");}
 
     }
 }
