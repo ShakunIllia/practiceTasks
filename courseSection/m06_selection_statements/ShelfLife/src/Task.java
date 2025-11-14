@@ -9,8 +9,8 @@ public class Task {
         shelfLife = args.length > 0 ? Integer.parseInt(args[1]) : shelfLife;
         //--------------------------------
 
-        //Write your solution here
-
+        if(outsideTemperature > 90) {shelfLife -= 4;}
+        System.out.println("shelfLife = " + shelfLife);
 
     }
 }
