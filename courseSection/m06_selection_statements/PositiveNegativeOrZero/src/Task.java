@@ -7,7 +7,13 @@ public class Task {
         num = args.length > 0 ? Integer.parseInt(args[0]) : num;
         //--------------------------------
 
-        //Write your solution here
+        System.out.println("num is " + num);
+
+        if(num > 0){System.out.println("positive");}
+        else if(num < 0){System.out.println("negative");}
+        else if(num == 0){System.out.println("zero");}
+        else System.out.println("invalid number");
+
 
     }
 }
