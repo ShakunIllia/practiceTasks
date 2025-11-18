@@ -6,5 +6,6 @@ public class Task {
     public static void cube(int n){
         int value = n * n * n;
         System.out.println(n + " * " + n + " * " + n + " = " + value);
+
     }
 }
