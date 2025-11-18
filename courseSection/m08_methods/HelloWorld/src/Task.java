@@ -13,7 +13,6 @@ public class Task {
     }
 
     public static void world() {
-
         System.out.println("World!");
 
     }
