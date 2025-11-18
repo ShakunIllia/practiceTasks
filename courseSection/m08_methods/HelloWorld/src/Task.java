@@ -9,7 +9,6 @@ public class Task {
     public static void hello() {
 
        System.out.println("Hello");
-
     }
 
     public static void world() {
