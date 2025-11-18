@@ -7,7 +7,8 @@ public class Task {
         n = args.length > 0 ? Integer.parseInt(args[0]) : n;
         //--------------------------------
 
-        //Write your solution here
-
+        int res = 1;
+        for(int i = 1; i <= n; i++) {res*=i;}
+        System.out.println(res);
     }
 }
