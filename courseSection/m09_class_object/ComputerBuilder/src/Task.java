@@ -49,8 +49,12 @@ public class Task {
             totalPrice += (storageAmount / 500) * 100;
         }
 
+
+
         System.out.println("Select screen resolution:");
         String resolution = input.next();
+
+
 
         if (resolution.equals("FULLHD")) {
             totalPrice += 100;
