@@ -1,5 +1,6 @@
 public class Task {
     public static void main(String[] args) {
+
         Recipe recipe = new Recipe();
         recipe.name = "Pizza";
         recipe.ingredients = "Dough, Cheese, Tomatoes";
