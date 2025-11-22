@@ -7,7 +7,7 @@ public class Task {
 
     public static boolean simpleRoomBook(boolean isAvailable, int month, int day, int year) {
 
-        //Write your solution here
+        return isAvailable && (year == 2018) && (month == 7) && (day >= 1 && day <= 8);
 
     }
 
