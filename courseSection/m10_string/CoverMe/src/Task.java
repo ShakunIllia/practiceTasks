@@ -7,7 +7,12 @@ public class Task {
 
     public static String coverMe(String main, String coverMe){
 
-        //Write your solution here
+        if (!main.contains(coverMe)) {
+            return "[" + main + "]";
+        }
 
+        return main.replace(coverMe, "[" + coverMe + "]");
     }
+
+
 }
