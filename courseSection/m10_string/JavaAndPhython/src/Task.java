@@ -12,7 +12,15 @@ public class Task {
         int java = 0;
         int python = 0;
         int length = str.length();
-        //Write your solution here
+        String lowerStr = str.toLowerCase();
+        for (int i = 0; i <= length - 4; i++) {
+            if (lowerStr.substring(i, i + 4).equals("java")) {
+                java++;
+            }
+            if (i <= length - 6 && lowerStr.substring(i, i + 6).equals("python")) {
+                python++;
+            }
+        }
 
         return java == python;
     }
