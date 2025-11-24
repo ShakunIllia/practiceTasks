@@ -10,7 +10,14 @@ public class Task {
 
         int tripleCount = 0;
 
-        //Write your solution here
+        for (int i = 0; i < str.length() - 2; i++) {
+            char current = str.charAt(i);
+
+            if (str.charAt(i + 1) == current && str.charAt(i + 2) == current) {
+                tripleCount++;
+            }
+        }
+
 
         return tripleCount;
     }
