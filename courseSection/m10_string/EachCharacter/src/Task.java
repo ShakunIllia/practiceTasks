@@ -8,8 +8,26 @@ public class Task {
     public static String countLetters(String str){
 
         String result = "";
-        //Write your solution here
+        for (int i = 0; i < str.length(); i++) {
 
-        return result;
+            char current = str.charAt(i);
+
+            // пропускаємо, якщо символ уже був порахований
+            if (result.indexOf(current) != -1) {
+                continue;
+            }
+
+            int count = 0;
+
+            // рахуємо повторення current
+            for (int j = 0; j < str.length(); j++) {
+                if (str.charAt(j) == current) {
+                    count++;
+                }
+            }
+            result += count + "" + current;
+        }
+
+            return result;
     }
 }
