@@ -27,6 +27,7 @@ public class Task {
                 System.out.println(numberOfBedrooms);
                 System.out.println("Sorry, we do not offer that many bedrooms");
                 break;
+
         }
     }
 }
