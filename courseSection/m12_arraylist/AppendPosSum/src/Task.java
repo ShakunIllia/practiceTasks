@@ -10,7 +10,20 @@ public class Task {
 
     public static ArrayList<Integer> appendPosSum(ArrayList<Integer> list) {
 
-        //Write your solution here
+        ArrayList<Integer> result = new ArrayList<>();
+        int sum = 0;
+
+        // додати тільки додатні елементи
+        for (int num : list) {
+            if (num > 0) {
+                result.add(num);
+                sum += num;
+            }
+        }
+
+        result.add(sum);
+
+        return result;
 
     }
 
