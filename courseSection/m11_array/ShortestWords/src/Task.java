@@ -8,8 +8,24 @@ public class Task {
 
     public static String[] shortestWords(String str){
 
-        //Write your solution here
+        String[] words = str.split(", ");
 
+        int min = words[0].length();
+        for(String word: words){
+            if(word.length() < min){min = word.length();}
+        }
+        int count = 0;
+        for(String word: words){
+            if(word.length() == min){count++;}
+        }
+        String[] result = new String[count];
+        int index = 0;
+        for(String word: words){
+            if(word.length()==min){
+                result[index++] = word;
+            }
+        }
+        return result;
     }
 
 }
