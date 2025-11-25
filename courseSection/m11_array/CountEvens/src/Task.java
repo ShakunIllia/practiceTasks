@@ -7,7 +7,10 @@ public class Task {
 
     public static int countEvens(int[] nums){
 
-        //Write your solution here
-
+        int sum = 0;
+        for(int element: nums){
+            if(element % 2 == 0){sum+=1;}
+        }
+        return sum;
     }
 }
