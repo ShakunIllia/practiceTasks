@@ -8,7 +8,14 @@ public class Task {
 
     public static int[] addToArray(int[] nums, int newElement) {
 
-        //Write your solution here
+        int[] newArr = new int[nums.length + 1];
+
+        for (int i = 0; i < nums.length; i++)
+            newArr[i] = nums[i];
+
+        newArr[newArr.length - 1] = newElement;
+
+        return newArr;
 
     }
 
