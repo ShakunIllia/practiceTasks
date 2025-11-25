@@ -13,8 +13,12 @@ public class Task {
 
     public static int refuels(ArrayList<Integer> deliveries, int gasTank){
 
-        //Write your solution here
+        int totalRefuels = 0;
+
+        for(int fuelNeeded : deliveries){
+            totalRefuels += (fuelNeeded + gasTank - 1) / gasTank;
+        }
+        return totalRefuels;
 
     }
-
 }
