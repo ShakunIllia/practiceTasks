@@ -18,6 +18,7 @@ public class Task {
         }
         else{
             System.out.println(number);
+
         }
     }
 }
