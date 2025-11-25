@@ -8,7 +8,18 @@ public class Task {
         String moreGuests = "yes";
 
         do {
-            //Write your solution here
+            System.out.println("Please enter the guest's name:");
+            String name = input.nextLine();
+
+            if (!guestList.toLowerCase().contains(name.toLowerCase())) {
+                if (!guestList.endsWith(": ")) {
+                    guestList += ", ";
+                }
+                guestList += name;
+            }
+
+            System.out.println("Do you want to enter another guest's name?");
+            moreGuests = input.nextLine();
 
         } while (moreGuests.equalsIgnoreCase("yes")); // if the String is anything besides yes then the loop stops
 
