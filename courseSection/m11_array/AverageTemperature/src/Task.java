@@ -12,6 +12,5 @@ public class Task {
             sum += temp;
         return sum/temps.length;
 
-
     }
 }
