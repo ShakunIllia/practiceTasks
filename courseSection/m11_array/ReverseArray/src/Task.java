@@ -8,7 +8,11 @@ public class Task {
 
     public static int[] reverseArray(int[] nums) {
 
-        //Write your solution here
+        int[] result = new int[nums.length];
+        for (int i = 0; i < nums.length; i++) {
+            result[i] = nums[nums.length - 1 - i];
+        }
+        return result;
 
     }
 
