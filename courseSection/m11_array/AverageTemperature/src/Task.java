@@ -7,7 +7,11 @@ public class Task {
 
     public static double averageTemperature(double[] temps){
 
-        //Write your solution here
+        double sum = 0;
+        for(double temp : temps)
+            sum += temp;
+        return sum/temps.length;
+
 
     }
 }
