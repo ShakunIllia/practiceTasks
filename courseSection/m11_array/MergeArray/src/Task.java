@@ -9,7 +9,16 @@ public class Task {
 
     public static int[] mergeArray(int[] nums1, int[] nums2){
 
-        //Write your solution here
+        int[] result = new int[nums1.length + nums2.length];
+        int i = 0, k = 0;
+
+        while (i < nums1.length || i < nums2.length) {
+            if (i < nums1.length) result[k++] = nums1[i];
+            if (i < nums2.length) result[k++] = nums2[i];
+            i++;
+        }
+
+        return result;
 
     }
 
