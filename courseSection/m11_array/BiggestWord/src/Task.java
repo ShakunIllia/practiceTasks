@@ -7,8 +7,13 @@ public class Task {
 
     public static String longestWord(String[] words){
 
-        //Write your solution here
-
+        String longestWord = words[0];
+        for(String word : words){
+            if(word.length() > longestWord.length()){
+                longestWord = word;
+            }
+        }
+        return longestWord;
     }
 
 }
