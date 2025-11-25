@@ -13,7 +13,13 @@ public class Task {
 
     public static boolean isSorted(ArrayList<Integer> nums) {
 
-        //Write your solution here
+
+        for (int i = 0; i < nums.size() - 1; i++) {
+            if (nums.get(i) > nums.get(i + 1)) {
+                return false;
+            }
+        }
+        return true;
     }
 
 }
