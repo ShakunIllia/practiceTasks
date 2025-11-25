@@ -14,7 +14,6 @@ public class Task {
             newArr[i] = nums[i];
 
         newArr[newArr.length - 1] = newElement;
-
         return newArr;
 
     }
