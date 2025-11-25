@@ -9,7 +9,14 @@ public class Task {
 
         String unique = "";
 
-        //Write your solution here
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if (unique.indexOf(ch) == -1) { // якщо ще не міститься
+                unique += ch;
+            }
+        }
+
 
         return unique;
     }
