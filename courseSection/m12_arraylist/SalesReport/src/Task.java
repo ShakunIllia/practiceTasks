@@ -17,8 +17,16 @@ public class Task {
 
     public static boolean calculateSales(ArrayList<Double> sales) {
 
-        //Write your solution here
+        double total = 0;
 
+        for(double branch : sales){
+            if(branch < 30000){
+                return false;
+            }
+            total += branch;
+        }
+
+        return total >= 5000000;
     }
 
 }
